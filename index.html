@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dheeraj Verma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55b37d5b79.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hey!, I'm <span>Dheeraj Verma</span><br> From Uttar Pradesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Dheeraj Verma, and I recently graduated with a Bachelor of Technology (B.Tech) in 2024
+                        from AKTU. As a passionate web developer, I specialize in creating dynamic, user-friendly
+                        websites and applications. With a strong foundation in coding languages like HTML, CSS,
+                        JavaScript, and experience in front-end and back-end development, I am committed to delivering
+                        innovative solutions that enhance the user experience. I am eager to continue learning and
+                        growing in the tech field, aiming to contribute meaningfully to projects that drive digital
+                        transformation.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>HTML, CSS, JS </li>
+                            <li><span>Back-End</span><br>Node.JS, MongoDB, SQL, PHP</li>
+                            <li><span>FrameWork</span><br>Tailwind, ReactJS, WordPress</li>
+                            <li><span>Programming</span><br>Java, C</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024(May - September) </span><br>Web developer at RUBIX TECHNOLOGIES</li>
+                            <li><span>2024(Feb - April)</span><br>BDM at HIKE EDUCATION</li>
+                            <li><span>2023(Aug - Sep)</span><br>Full StacK Intern at BHARAT INTERN COMPANY</li>
+                            <li><span>Programming</span><br>Java, C</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>B.Tech (computer Scince)</li>
+                            <li><span>2020</span><br>Higher Secondary Certificate</li>
+                            <li><span>2018</span><br>Secondary School Certificate</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Our Full Stack Web Development Services provide end-to-end solutions for building dynamic,
+                        responsive, and scalable websites. From front-end design using HTML, CSS, and JavaScript
+                        frameworks to back-end development with databases, APIs, and server-side technologies like
+                        Node.js , we handle every aspect of the development process.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-pencil"></i>
+                    <h2>Web design</h2>
+                    <p>Our WordPress web design services provide customized, user-friendly websites tailored to your
+                        business needs. We focus on creating visually appealing, responsive, and SEO-optimized sites
+                        that enhance user experience and drive engagement. Whether you need a blog, portfolio, or
+                        e-commerce platform, we leverage the flexibility of WordPress to deliver feature-rich websites
+                        with easy content management.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-laptop"></i>
+                    <h2>Software Development</h2>
+                    <p>Software development services specialize in creating robust, scalable, and secure solutions using
+                        Java. By following the Software Development Life Cycle (SDLC) methodology, we ensure a
+                        structured and efficient approach to every project. From requirement analysis, system design,
+                        and coding to testing, deployment, and maintenance, we leverage Java's versatility to deliver
+                        high-performance applications tailored to your business needs.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/netflix.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>A Netflix Clone using HTML and CSS is a simple project that replicates the front-end design
+                            of the Netflix homepage. </p>
+                            <a href="images/netflix.png"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A portfolio website built using HTML, CSS, and JavaScript showcases your work and skills in a
+                            clean, organized manner.</p>
+                            <a href="images/portfolio.png"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/atm-program-java.png" alt="">
+                    <div class="layer">
+                        <h3>ATM Application</h3>
+                        <p>An ATM (Automated Teller Machine) application can be designed using Java's Object-Oriented
+                            Programming (OOP) principles to ensure modularity, reusability, and maintainability. </p>
+                            <a href="images/atm-program-java.png"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------Contacts------ -->
+
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>dheerajver0031@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 9720493393</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100055564850029"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/_verma_131/"><i class="fab fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/dheerajverma01"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/DHEERAJ_VERMA_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Your Form is successfully submitted</span>
+                </div>     
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Portfolio Website © 2024 | Made by : <strong>Dheeraj Verma</strong></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
